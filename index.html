@@ -8,26 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="new-book"> NEW BOOK +</button>
-    <div class="form">
-        <form action="post">
-            <fieldset class="form-fieldset">
-                <label for="book-entry">Book Name</label>
-                <input id="book-entry" class="book-entry" type="text">
-                <label for="author">Author</label>
-                <input id="author" class="author" type="text">
-                <label for="pages">Pages</label>
-                <input id="pages" class="pages" type="number">
-                <h3>Have you read this book?</h3>
-                <label for="yes">yes</label>
-                <input name="read-status"id="yes" class="yes" type="radio">
-                <label for="no">no</label>
-                <input name="read-status"id="no" class="no" type="radio">
-                <button class="submit">Submit</button>
-            </fieldset>
-        </form>
+    <div class="container">
+        <div class="heading-container">
+            <h1>My Book Library</h1>
+        </div>
+        <button class="new-book"> NEW BOOK +</button>
+        <div class="form">
+            <form action="post">
+                <fieldset class="form-fieldset">
+                    <div class="title">
+                        <label for="book-entry">Book Name</label>
+                        <input id="book-entry" class="book-entry" type="text">
+                    </div>
+                    <div class="author-container">
+                        <label for="author">Author</label>
+                        <input id="author" class="author" type="text">
+                    </div>
+                    <div class="pages">
+                        <label for="pages">Pages</label>
+                        <input id="pages" class="pages" type="number">
+                    </div>
+                    <div class="status-container">
+                        <h3>Have you read this book?</h3>
+                        <label for="yes">yes</label>
+                        <input name="read-status"id="yes" value="yes" type="radio">
+                        <label for="no">no</label>
+                        <input name="read-status"id="no" value="no" type="radio">
+                    </div>
+                    <button class="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="books-section">
+            <h3 class="your-books">YOUR BOOKS</h3>
+            <div class="line"></div>
+        </div>
+        <ul class="book-list">
+        </ul>
     </div>
-    <ul class="book-list">
-    </ul>
 </body>
 </html>
