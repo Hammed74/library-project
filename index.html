@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="heading-container">
-            <h1>My Book Library</h1>
+      <div class="heading-container">
+        <h1>My Book Library</h1>
+      </div>
+      <button class="new-book">NEW BOOK +</button>
+      <div class="form">
+        <form action="post">
+          <fieldset class="form-fieldset">
+            <div class="title">
+              <label for="book-entry">Book Name</label>
+              <input id="book-entry" class="book-entry" type="text" />
+            </div>
+            <div class="author-container">
+              <label for="author">Author</label>
+              <input id="author" class="author" type="text" />
+            </div>
+            <div class="pages-container">
+              <label for="pages">Pages</label>
+              <input id="pages" class="pages" type="number" />
+            </div>
+            <div class="status-container">
+              <h3>Have you read this book?</h3>
+              <label for="yes">yes</label>
+              <input
+                name="read-status"
+                id="yes"
+                value="yes"
+                type="radio"
+                checked
+              />
+              <label for="no">no</label>
+              <input name="read-status" id="no" value="no" type="radio" />
+            </div>
+            <button class="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="books-section">
+        <div class="labels">
+          <h3 class="your-books">YOUR BOOKS</h3>
+          <div class="labels-info">
+            <h3 class="info">AUTHOR</h3>
+            <h3 class="pages-info">#PAGES</h3>
+            <div class="blank-space2"></div>
+            <div class="blank-space"></div>
+          </div>
+          <div class="line"></div>
         </div>
-        <button class="new-book"> NEW BOOK +</button>
-        <div class="form">
-            <form action="post">
-                <fieldset class="form-fieldset">
-                    <div class="title">
-                        <label for="book-entry">Book Name</label>
-                        <input id="book-entry" class="book-entry" type="text">
-                    </div>
-                    <div class="author-container">
-                        <label for="author">Author</label>
-                        <input id="author" class="author" type="text">
-                    </div>
-                    <div class="pages">
-                        <label for="pages">Pages</label>
-                        <input id="pages" class="pages" type="number">
-                    </div>
-                    <div class="status-container">
-                        <h3>Have you read this book?</h3>
-                        <label for="yes">yes</label>
-                        <input name="read-status"id="yes" value="yes" type="radio">
-                        <label for="no">no</label>
-                        <input name="read-status"id="no" value="no" type="radio">
-                    </div>
-                    <button class="submit">Submit</button>
-                </fieldset>
-            </form>
-        </div>
-        <div class="books-section">
-            <h3 class="your-books">YOUR BOOKS</h3>
-            <div class="line"></div>
-        </div>
-        <ul class="book-list">
-        </ul>
+        <ul class="book-list"></ul>
+      </div>
     </div>
-</body>
+  </body>
 </html>
